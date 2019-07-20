@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/cc"
+    android:scaleType="fitXY"/>
+    <TextView
+        android:layout_marginTop="60sp"
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="18dp"
+        android:text="Fahrenheit and Celsius Converter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35sp"
+        android:textColor="#fafafa"
+        android:textStyle="bold"
+        />
+
+
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="#fafafa"
+            android:layout_marginTop="120dp"
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Enter value"
+            android:inputType="numberDecimal"
+            />
+
+          <TextView
+              android:layout_marginLeft="20sp"
+              android:layout_marginRight="20sp"
+              android:layout_marginTop="20dp"
+              android:layout_below="@id/editText"
+              android:id="@+id/textView"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:text="Result"
+              android:textSize="20dp"
+              android:textStyle="bold"
+              android:textColor="#fafafa"/>
+
+        <RadioGroup android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:id="@+id/radioGropu">
+
+            <RadioButton
+                android:id="@+id/fn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Fahrenheit"
+                android:checked="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fafafa"/>
+
+            <RadioButton
+                android:textColor="#fafafa"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Celsius "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGropu"
+        android:layout_centerHorizontal="true"
+        android:text="Convert"
+        android:onClick="convert"
+        android:textColor="@color/colorAccent"
+        android:background="#fafafa"
+        android:textStyle="bold"
+
+       />
+
+
+</RelativeLayout>
